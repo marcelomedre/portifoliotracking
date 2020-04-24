@@ -246,7 +246,6 @@ server <- function(input, output, session) {
         
         # Getting TD data
         if(input$CDI == TRUE){
-                my.key <- "vaxjQ8nvtX62qez6fhiS"
                 Quandl.api_key(my.key)
                 quandl.codes <- c("BCB/4389")
                 df.CDI <- Quandl(quandl.codes,
